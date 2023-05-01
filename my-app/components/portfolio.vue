@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4">
+  <div class="pt-4">
     <ul class="flex justify-around flex-wrap -z-0">
       <li v-for="i in posts">
         <div

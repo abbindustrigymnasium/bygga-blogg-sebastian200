@@ -1,86 +1,88 @@
 <template>
-  <div class="blog py-20">
-    <div class="header">
-      <div
-        class="flex justify-center font-serif font-extralight shadow-sm shadow-slate-800"
-      >
-        <button @click="value = !value">
-          <h1>Portfolio</h1>
-        </button>
-      </div>
-
-      <div
-        class="portfolioSettings bg-slate-600 bg-opacity-80 z-10 m-0 shadow-md shadow-black"
-      >
-        <h1
-          class="text-4xl p-6 m-0 flex justify-center shadow-md font-semibold"
+  <ClientOnly>
+    <div class="blog pt-20">
+      <div class="header">
+        <div
+          class="flex justify-center font-serif font-extralight shadow-sm shadow-slate-800"
         >
-          filter
-        </h1>
-        <div class=" ">
-          <div class="shadow-md p-4">
-            <div class="flex justify-center m-2 font-semibold">Topic</div>
-            <multiButton
-              one="Software"
-              two="Hardware"
-              three="Ai"
-              @Software="topicClick('Software')"
-              @ai="topicClick('ai')"
-              @Hardware="topicClick('Hardware')"
-              class="flex m- justify-center"
-            />
-          </div>
-          <div class="shadow-md p-4">
-            <div class="flex justify-center m-2 font-semibold">Author</div>
-            <div class="flex justify-center">
-              <input
-                class="author rounded-2xl border-solid border-gray-500 border-2 bg-fuchsia-900 bg-opacity-30 p-2 shadow-inner"
-                type="text"
-                v-model="dub"
+          <button @click="value = !value">
+            <h1>Portfolio</h1>
+          </button>
+        </div>
+
+        <div
+          class="portfolioSettings bg-slate-600 bg-opacity-80 z-10 m-0 shadow-md shadow-black"
+        >
+          <h1
+            class="text-4xl p-6 m-0 flex justify-center shadow-md font-semibold"
+          >
+            filter (work in progress)
+          </h1>
+          <div class=" ">
+            <div class="shadow-md p-4">
+              <div class="flex justify-center m-2 font-semibold">Topic</div>
+              <multiButton
+                one="Software"
+                two="Hardware"
+                three="Ai"
+                @Software="topicClick('Software')"
+                @ai="topicClick('ai')"
+                @Hardware="topicClick('Hardware')"
+                class="flex m- justify-center"
               />
             </div>
-          </div>
+            <div class="shadow-md p-4">
+              <div class="flex justify-center m-2 font-semibold">Author</div>
+              <div class="flex justify-center">
+                <input
+                  class="author rounded-2xl border-solid border-gray-500 border-2 bg-fuchsia-900 bg-opacity-30 p-2 shadow-inner"
+                  type="text"
+                  v-model="dub"
+                />
+              </div>
+            </div>
 
-          <div class="shadow-md p-4">
-            <div class="flex justify-center">Year</div>
-            <multiButton
-              one="2022"
-              two="2023"
-              three="2024"
-              class="flex justify-center"
-              @2023="yearClick('2023')"
-              @2022="yearClick('2022')"
-              @2024="yearClick('2024')"
-            />
-          </div>
-          <div class="flex justify-center m-4">
-            <button @click="submit()" class="btn bg-rose-700">submit</button>
-          </div>
-          <div class="flex justify-center m-4">
-            <a
-              class="text-blue-500 active:text-gray-500"
-              @click="yearClick('bruh'), topicClick('bruh')"
-              >clear filter</a
-            >
+            <div class="shadow-md p-4">
+              <div class="flex justify-center">Year</div>
+              <multiButton
+                one="2022"
+                two="2023"
+                three="2024"
+                class="flex justify-center"
+                @2023="yearClick('2023')"
+                @2022="yearClick('2022')"
+                @2024="yearClick('2024')"
+              />
+            </div>
+            <div class="flex justify-center m-4">
+              <button @click="submit()" class="btn bg-rose-700">submit</button>
+            </div>
+            <div class="flex justify-center m-4">
+              <a
+                class="text-blue-500 active:text-gray-500"
+                @click="yearClick('bruh'), topicClick('bruh')"
+                >clear filter</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="flex justify-center p-16 px-12 md:px-28 text-center shadow-md shadow-black"
-    >
-      <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nobis
-        accusamus numquam reprehenderit quisquam autem exercitationem quidem
-        deleniti, veritatis, quasi blanditiis molestiae consequuntur, harum
-        nulla modi quo alias unde dignissimos!
+      <div
+        class="flex justify-center p-16 px-12 md:px-28 text-center shadow-md shadow-black"
+      >
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nobis
+          accusamus numquam reprehenderit quisquam autem exercitationem quidem
+          deleniti, veritatis, quasi blanditiis molestiae consequuntur, harum
+          nulla modi quo alias unde dignissimos!
+        </div>
       </div>
-    </div>
 
-    <div class="body"></div>
-    <portfolio :author="author" :category="category" :year="year" />
-  </div>
-  <socials />
+      <div class="body"></div>
+      <portfolio :author="author" :category="category" :year="year" />
+      <socials />
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup>

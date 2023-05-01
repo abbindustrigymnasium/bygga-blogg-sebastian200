@@ -5,7 +5,11 @@
     </div>
 
     <div class="flex justify-center">
-      <img class="w-1/3" src="../assets/icons/me.png" alt="" />
+      <img
+        class="w-full md:w-1/2 lg:w-1/3 mx-10"
+        src="../assets/icons/me.png"
+        alt=""
+      />
     </div>
     <div
       class="new flex flex-col md:flex-row justify-center shadow-md shadow-black p-10"
