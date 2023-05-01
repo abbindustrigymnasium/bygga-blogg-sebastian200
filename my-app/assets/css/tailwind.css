@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  template {
+    @apply w-max;
+    @apply bg-purple-900;
+    @apply text-slate-50;
+  }
+
+  h1 {
+    @apply text-6xl;
+    @apply font-extralight;
+    @apply m-8;
+  }
+
+  h2 {
+    @apply text-4xl text-white;
+  }
+
+  .products {
+    @apply font-bold bg-slate-400 rounded-md m-3 p-2 drop-shadow-lg;
+  }
+
+  .btn {
+    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm shadow-lg shadow-black hover:shadow-none hover:rounded-lg active:relative active:top-1;
+  }
+
+  .step {
+    @apply bg-slate-300 w-full h-screen m-0;
+  }
+
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+
+  div {
+    @apply text-slate-50 xl:text-xl text-lg;
+  }
+
+  .awardbox {
+    border-radius: 0px 50px 0px 0px;
+    border: 2px dotted red;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input {
+    background-color: rgb(17, 11, 41);
+    border-color: rgb(95, 95, 95);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 14px;
+    margin: 10px;
+  }
+
+  .socials {
+    @apply w-8 m-2.5;
+  }
+}
