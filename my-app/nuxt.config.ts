@@ -1,10 +1,31 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        '@nuxtjs/tailwindcss',
-        '@nuxt/content'
+        '@nuxt/content',
+        '@nuxtjs/tailwindcss'
     ],
-    content: {
-        // https://content.nuxtjs.org/api/configuration
-    }
+    genarate: {
+        routes: [
+
+        ]
+
+    },
+    app: {
+        head: {
+            title: 'kallekula',
+            meta: [
+                { name: 'description', content: 'everything' }
+            ],
+            link: [
+                { rel: 'stylesheet', href: 'https://content.nuxtjs.org/guide/writing/mdc/' }
+            ]
+        }
+    },
+    css: ['~/assets/css/tailwind.css'],
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    },
+
 })
