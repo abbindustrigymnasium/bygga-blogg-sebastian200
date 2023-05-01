@@ -1,4 +1,4 @@
-export default defineNuxtConfig({
+export default {
     modules: [
         '@nuxt/content',
         '@nuxtjs/tailwindcss'
@@ -28,4 +28,4 @@ export default defineNuxtConfig({
         },
     },
 
-})
+}

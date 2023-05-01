@@ -100,7 +100,7 @@ li {
 }
 
 .sideNavbar {
-  left: -400px;
+  left: -900px;
 
   transition-property: left;
   transition-duration: 1s;

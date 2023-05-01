@@ -1,29 +1,31 @@
 <template>
-  <div class="blog py-20">
-    <div class="header">
+  <ClientOnly>
+    <div class="blog pt-20">
+      <div class="header">
+        <div
+          class="flex justify-center font-serif font-extralight shadow-sm shadow-slate-800"
+        >
+          <button @click="value = !value">
+            <h1>Blog</h1>
+          </button>
+        </div>
+      </div>
       <div
-        class="flex justify-center font-serif font-extralight shadow-sm shadow-slate-800"
+        class="flex justify-center p-16 px-12 md:px-28 text-center shadow-md shadow-black"
       >
-        <button @click="value = !value">
-          <h1>Blog</h1>
-        </button>
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+          cupiditate reprehenderit nihil, recusandae sint voluptatibus minus
+          assumenda, eos tenetur explicabo corrupti incidunt consequatur
+          officiis perspiciatis dolore, similique excepturi molestiae ipsa?
+        </div>
       </div>
-    </div>
-    <div
-      class="flex justify-center p-16 px-12 md:px-28 text-center shadow-md shadow-black"
-    >
-      <div>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate
-        reprehenderit nihil, recusandae sint voluptatibus minus assumenda, eos
-        tenetur explicabo corrupti incidunt consequatur officiis perspiciatis
-        dolore, similique excepturi molestiae ipsa?
-      </div>
-    </div>
 
-    <div class="body"></div>
-    <portfolio />
-  </div>
-  <socials />
+      <div class="body"></div>
+      <portfolio />
+      <socials />
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup>
