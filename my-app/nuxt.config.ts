@@ -4,8 +4,12 @@ export default {
         '@nuxtjs/tailwindcss'
     ],
     genarate: {
+        target: 'static',
         routes: [
-
+            '/blog',
+            '/about',
+            '/contact',
+            '/portfolio',
         ]
 
     },
