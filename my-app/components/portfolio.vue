@@ -6,18 +6,14 @@
           v-if="
             cookie.includes('bruh') ||
             cookie.includes(post[i - 1].year) ||
-            cookie.includes(
-              post[i - 1].category || cookie.includes(post[i - 1].author)
-            )
+            cookie.includes(post[i - 1].category || cookie.includes(post[i - 1].author))
           "
           :class="'img m-6 w-72 lg:w-90 lg:h-96 h-80 border-dashed border-rose-700 border rounded-3xl shadow-xl shadow-black'"
           v-bind:style="{ backgroundImage: 'url(' + post[i - 1].img + ')' }"
         >
           <div class="portCard rounded-3xl p-3 h-full">
             <nuxt-link class="" :to="post[i - 1]._path">
-              <h1
-                class="text-3xl font-semibold flex justify-center m-2 mb-8 text-center"
-              >
+              <h1 class="text-3xl font-semibold flex justify-center m-2 mb-8 text-center">
                 {{ post[i - 1].title }}
               </h1>
               <div>
