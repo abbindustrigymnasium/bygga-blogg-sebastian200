@@ -6,8 +6,13 @@ export default {
     genarate: {
         target: 'static',
         routes: [
-            '/content/new'
+            '/content/new',
+            'content/blog/crazy',
+            'content/blog/pleasing',
+            'content/blog/wap.md',
+            'content/blog/why.md'
         ]
+
 
     },
     app: {
