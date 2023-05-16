@@ -6,10 +6,7 @@ export default {
     genarate: {
         target: 'static',
         routes: [
-            '/blog',
-            '/about',
-            '/contact',
-            '/portfolio',
+            '/content/new'
         ]
 
     },
