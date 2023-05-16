@@ -6,11 +6,12 @@ export default {
     genarate: {
         target: 'static',
         routes: [
-            '/content/new',
-            'content/blog/crazy',
-            'content/blog/pleasing',
-            'content/blog/wap.md',
-            'content/blog/why.md'
+            '/new',
+            '/blog/crazy',
+            '/blog/pleasing',
+            '/blog/wap.md',
+            '/blog/why.md',
+            'portfolio/mindReading'
         ]
 
 
