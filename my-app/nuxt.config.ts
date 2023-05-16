@@ -10,7 +10,8 @@ export default {
             '/blog/crazy',
             '/blog/pleasing',
             '/blog/wap.md',
-            '/blog/why.md'
+            '/blog/why.md',
+            'portfolio/mindReading'
         ]
 
 
