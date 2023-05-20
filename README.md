@@ -12,3 +12,8 @@ Detta är en hemsida för min protfolio, men också fakta om mig själv riktat t
 
 hemsidan är uppbyg på nuxt med vue och har 5-10 subsidor med ett antal componeneter fårn. Jag har också som sakt anvnte mig av nuxt content med markdown för att snabbt lägga upp bloggar
 utöver detta har jag använt mig av tailwind css för lättare styling.
+
+Netlefy länk: https://whimsical-lokum-a62c45.netlify.app 
+OBS: När man går in på någon av bloggarna på den upplagda siten, 
+visas inte bloggarna som de ska även om det fungerar på lokalt, men jag arbetar på att få det att fungera. 
+
